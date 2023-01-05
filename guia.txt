@@ -1,11 +1,8 @@
-package guia
-
-/*
 pwd         - para saber donde se esta
 cd "        - para navegar (..)"arriba" (name)"escritorio al cual se va"
 ls          - para ver lo que contiene la carpeta
 git init    - inicia el repositorio en la carpeta seleccionada
-            crea 2 carpetas invisibles en dicho repositorio
+            crea la carpeta ".git" en invisible, NO TOCAR ESA CARPETA
 git status  - para ver los archivos que se tienen
             rojo significa que esta en el aire, no se agrego al entorno de trabajo
 git add ""  - Agregas el archivo a tu entorno de trabajo. (git add guia.go)
@@ -18,7 +15,7 @@ git c --global user.email caceresgabriel2001@gmail.com     -si se escribe mal so
 git config --global user.name Gabriel
 
 git commit  - abre el editor de código, si no deja editar hay que presionar la tecla 'I'
-            cuando se termine se presiona "Esc" y se pone ":wq" (write-quit)
+            cuando se termine se presiona "Esc" y se pone ":wq" (write-quitw)
             al acabar debe haber creado IDs para diferenciar las versiones que se guardan
 
 git log     - para ver los commits que se han creado (el de arriba es el mas reciente)
@@ -30,4 +27,9 @@ git checkout -- guia.go     - esto retornará a su estado anterior el archivo, a
 git diff guia.go        - para ver las diferencias hechas en los archivos
                     rojo: lo que se quitó       verde: lo que se agregó
                     para salir de ese menú se preiona la tecla "Q" (quit)
-*/
+
+Para crear una sección en donde no queremos que haga cambios, creamos el archivo ".gitignore"
+para poner los archivos o carpetas que se desean ignorar.
+Pero para eso debo de poner "git add .gitignore"
+si se agregan más cosas y se incluyen en .gitignore se dirá que fue modificado el archivo,
+pero no mostrará el nuevo que se quiere ignorar
