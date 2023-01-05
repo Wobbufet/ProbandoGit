@@ -18,7 +18,7 @@ git c --global user.email caceresgabriel2001@gmail.com     -si se escribe mal so
 git config --global user.name Gabriel
 
 git commit  - abre el editor de código, si no deja editar hay que presionar la tecla 'I'
-            cuando se termine se presiona "Esc" y se pone ":wq"
+            cuando se termine se presiona "Esc" y se pone ":wq" (write-quit)
             al acabar debe haber creado IDs para diferenciar las versiones que se guardan
 
 git log     - para ver los commits que se han creado (el de arriba es el mas reciente)
@@ -29,5 +29,5 @@ git checkout -- guia.go     - esto retornará a su estado anterior el archivo, a
 
 git diff guia.go        - para ver las diferencias hechas en los archivos
                     rojo: lo que se quitó       verde: lo que se agregó
-                    para salir de ese menú se preiona la tecla "Q"
+                    para salir de ese menú se preiona la tecla "Q" (quit)
 */
