@@ -1,3 +1,5 @@
+SI BORRAS LA TERMINAL NO SE BORRA LOS AVANCES, solo debes estar en la carpeta correcta
+
 pwd         - para saber donde se esta
 cd "        - para navegar (..)"arriba" (name)"escritorio al cual se va"
 ls          - para ver lo que contiene la carpeta
@@ -11,7 +13,7 @@ git add ""  - Agregas el archivo a tu entorno de trabajo. (git add guia.go)
 git commit  - crea un punto de control del código, pues puede tener cambios
         así que primero se crea unarchivo para configurar
 
-git c --global user.email caceresgabriel2001@gmail.com     -si se escribe mal solo se vuelve a poner, ya que se sobreescribe
+git config --global user.email caceresgabriel2001@gmail.com     -si se escribe mal solo se vuelve a poner, ya que se sobreescribe
 git config --global user.name Gabriel
 
 git commit  - abre el editor de código, si no deja editar hay que presionar la tecla 'I'
@@ -33,3 +35,14 @@ para poner los archivos o carpetas que se desean ignorar.
 Pero para eso debo de poner "git add .gitignore"
 si se agregan más cosas y se incluyen en .gitignore se dirá que fue modificado el archivo,
 pero no mostrará el nuevo que se quiere ignorar
+
+git commit -m "texto más rápido"        -de esta forma no hay que entrar al editor
+
+git branch              -muestra la carpeta 'master' la cual es el proyecto desarrollado, con archivos y carpetas
+git branch login        -creo una version alternativa llamada login (culquier nombre puedo darle), se confirma con branch
+git chechout login      -se cambia a de master a login
+
+comienzo a generar cambios, como agregar archivos y carpetas. (ojo, las carpetas vacias no las considera)
+para agregar rápidamente todos puedo poner: git add .
+eso agregará todos los que me refleje en color rojo en status.
+luego se vuelve al master para ver como los achivos desaparecen, pues se volvió a una version anterior
