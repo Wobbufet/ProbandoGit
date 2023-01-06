@@ -45,4 +45,15 @@ git chechout login      -se cambia a de master a login
 comienzo a generar cambios, como agregar archivos y carpetas. (ojo, las carpetas vacias no las considera)
 para agregar rápidamente todos puedo poner: git add .
 eso agregará todos los que me refleje en color rojo en status.
+Hay que crear un commit para que haya diferencias, sino no cambian las cosas
 luego se vuelve al master para ver como los achivos desaparecen, pues se volvió a una version anterior
+
+-------------------------------------------------------------
+
+Para subirlo a github hay que hacer un parde cosas:
+crear lo en github, luego copiar la dirección que da y poner lo siguiente:
+
+git remote add origin https://github.com/Wobbufet/ProbandoGit.git
+git push -u origin master
+
+para traerlo de github se pone: git clone https.....
